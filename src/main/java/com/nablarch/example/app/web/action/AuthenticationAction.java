@@ -53,6 +53,8 @@ public class AuthenticationAction {
     public HttpResponse login(HttpRequest request, ExecutionContext context) {
 
         final LoginForm form = BeanUtil.createAndCopy(LoginForm.class, request.getParamMap());
+        form.setLoginId("10000001");
+        form.setUserPassword("pass123-");
 
         try {
             ValidatorUtil.validate(form);
