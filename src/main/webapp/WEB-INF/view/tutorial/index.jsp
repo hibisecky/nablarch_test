@@ -13,8 +13,9 @@
         <n:form method="POST">
             <h2>チュートリアル</h2>
             <div>
-                <label for="loginId">ログイン</label>
-                    <n:text id="loginId" name="loginId" />
+                <label for="loginId">ログインID</label>
+                <n:text id="loginId" name="loginId" />
+                <n:button uri="/action/tutorial/login">ログイン</n:button>
             </div>
         </n:form>
     </body>

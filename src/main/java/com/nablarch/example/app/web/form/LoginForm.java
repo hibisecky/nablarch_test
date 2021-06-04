@@ -18,13 +18,13 @@ public class LoginForm implements Serializable {
     private static final long serialVersionUID = 1L;
 
     /** ログインID */
-    @Required
-    @Domain("loginId")
+//    @Required
+//    @Domain("loginId")
     private String loginId;
 
     /** パスワード */
-    @Required
-    @Domain("password")
+//    @Required
+//    @Domain("password")
     private String userPassword;
 
     /**
