@@ -65,6 +65,7 @@ com\nablarch\example\app\web\common\file\TemporaryFileFailedException.class
 com\nablarch\example\app\web\common\authentication\encrypt\PasswordEncryptor.class
 com\nablarch\example\app\web\dto\ClientDto.class
 com\nablarch\example\app\web\common\authentication\SystemAccountAuthenticator$2.class
+com\nablarch\example\app\web\dto\UsersDto.class
 com\nablarch\example\app\web\form\ClientSearchForm.class
 com\nablarch\example\app\entity\SystemAccount.class
 com\nablarch\example\app\web\common\authentication\exception\PasswordExpiredException.class

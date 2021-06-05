@@ -3,6 +3,7 @@ package com.nablarch.example.app.web.action;
 import com.nablarch.example.app.entity.SystemAccount;
 import com.nablarch.example.app.entity.Users;
 import com.nablarch.example.app.web.common.authentication.context.LoginUserPrincipal;
+import com.nablarch.example.app.web.dto.UsersDto;
 import com.nablarch.example.app.web.form.LoginForm;
 import nablarch.common.dao.UniversalDao;
 import nablarch.common.web.session.SessionUtil;
@@ -10,6 +11,8 @@ import nablarch.core.beans.BeanUtil;
 import nablarch.fw.ExecutionContext;
 import nablarch.fw.web.HttpRequest;
 import nablarch.fw.web.HttpResponse;
+
+import java.util.List;
 
 
 public class TutorialAction {
@@ -58,6 +61,8 @@ public class TutorialAction {
     }
 
     public HttpResponse searchUsers(HttpRequest request, ExecutionContext context){
-        return new HttpResponse("/WEB-INF/view/tutorial/searchUsers");
+        List<Users> users = UniversalDao.findAll(Users.class);
+        context.setRequestScopedVar("users", users);
+        return new HttpResponse("/WEB-INF/view/tutorial/searchUsers.jsp");
     }
 }
