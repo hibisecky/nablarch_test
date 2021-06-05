@@ -18,6 +18,8 @@
                     <td><n:write name="form.loginId"/></td>
                 </tr>
             </tbody>
+            <n:a href="/action/tutorial/detail">プロフィール</n:a><br>
+            <n:a href="/action/tutorial/searchUsers">ユーザ検索</n:a>
         </table>
     </body>
 </html>

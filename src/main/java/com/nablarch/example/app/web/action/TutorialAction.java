@@ -26,7 +26,8 @@ public class TutorialAction {
         LoginUserPrincipal userContext = createLoginUserContext(form.getLoginId());
         SessionUtil.put(context, "userContext", userContext);
         SessionUtil.put(context, "user.id", String.valueOf(userContext.getUserId()));
-        context.setRequestScopedVar("form", form);
+        //context.setRequestScopedVar("form", form);
+        SessionUtil.put(context, "form", form);
         return new HttpResponse("/WEB-INF/view/tutorial/menu.jsp");
     }
 
@@ -42,6 +43,21 @@ public class TutorialAction {
         userContext.setLastLoginDateTime(account.getLastLoginDateTime());
 
         return userContext;
+    }
 
+    public HttpResponse detail(HttpRequest request, ExecutionContext context){
+        LoginForm form = SessionUtil.get(context, "form");
+        SystemAccount account = UniversalDao.findBySqlFile(SystemAccount.class,
+                        "FIND_SYSTEM_ACCOUNT_BY_AK", new Object[]{form.getLoginId()});
+        Users users = UniversalDao.findById(Users.class, account.getUserId());
+        context.setRequestScopedVar("users", users);
+        account.setUsers(users);
+        context.setRequestScopedVar("account", account);
+//        context.setRequestScopedVar("loginId", form.getLoginId());
+        return new HttpResponse("/WEB-INF/view/tutorial/detail.jsp");
+    }
+
+    public HttpResponse searchUsers(HttpRequest request, ExecutionContext context){
+        return new HttpResponse("/WEB-INF/view/tutorial/searchUsers");
     }
 }
