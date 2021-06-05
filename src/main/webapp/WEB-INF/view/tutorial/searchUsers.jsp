@@ -20,6 +20,7 @@
                     <tr>
                         <th>ユーザID</th>
                         <th>名前</th>
+                        <th>かな</th>
                     <tr>
                 </jsp:attribute>
                 <jsp:attribute name="bodyRowFragment">
@@ -30,9 +31,20 @@
                         <td>
                             <n:write name="row.kanjiName" />
                         </td>
+                        <td>
+                            <n:write name="row.kanaName" />
+                        </td>
                     </tr>
                 </jsp:attribute>
             </app:listSearchResult>
         </c:if>
+        <section>
+            <div class="page-footer">
+                <div>
+                    <div class="button-block link-button-block">
+                        <n:a href="/action/tutorial/login" cssClass="btn btn-raised btn-default">戻る</n:a>
+                </div>
+            </div>
+        </section>
     </body>
 </html>

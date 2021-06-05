@@ -1,0 +1,14 @@
+com.nablarch.example.app.entity.core.validation.validator
+com.nablarch.example.app.test
+com.nablarch.example.app.test.advice
+com.nablarch.example.app.web.action
+com.nablarch.example.app.web.common.authentication
+com.nablarch.example.app.web.common.authentication.context
+com.nablarch.example.app.web.common.authentication.encrypt
+com.nablarch.example.app.web.common.authentication.exception
+com.nablarch.example.app.web.common.code
+com.nablarch.example.app.web.common.file
+com.nablarch.example.app.web.dto
+com.nablarch.example.app.web.filter
+com.nablarch.example.app.web.form
+com.nablarch.example.app.web.handler

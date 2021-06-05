@@ -1,6 +1,6 @@
 #FileLock
-#Sat Jun 05 16:02:47 GMT+09:00 2021
+#Sat Jun 05 20:39:52 GMT+09:00 2021
 hostName=LAPTOP-09GPUSO5
-id=179dafb30c4ec2539604802044e7d23be5549276fdf
+id=179dbf8dbdc66544e2a54d713637875ebba73710fb6
 method=file
-server=192.168.3.9\:53727
+server=192.168.3.9\:51826

@@ -388,3 +388,42 @@
 	CURRENT FILE SIZE  = [23149]
 2021-06-05 16:02:42.423 -INFO- null [null] boot_proc = [] proc_sys = [nablarch-example-web] req_id = [null] usr_id = [null] initialized.
 	LOGGER = [MON] NAME REGEX = [MONITOR] LEVEL = [ERROR]
+2021-06-05 19:48:29.294 -INFO- null [null] boot_proc = [] proc_sys = [nablarch-example-web] req_id = [null] usr_id = [null] initialized.
+	WRITER NAME        = [writer.monitorFile]
+	WRITER CLASS       = [nablarch.core.log.basic.FileLogWriter]
+	FORMATTER CLASS    = [nablarch.core.log.basic.BasicLogFormatter]
+	LEVEL              = [null]
+	FILE PATH          = [./monitor.log]
+	ENCODING           = [UTF-8]
+	OUTPUT BUFFER SIZE = [8000]
+	FILE AUTO CHANGE   = [false]
+	MAX FILE SIZE      = [0]
+	CURRENT FILE SIZE  = [23874]
+2021-06-05 19:48:29.304 -INFO- null [null] boot_proc = [] proc_sys = [nablarch-example-web] req_id = [null] usr_id = [null] initialized.
+	LOGGER = [MON] NAME REGEX = [MONITOR] LEVEL = [ERROR]
+2021-06-05 20:05:04.586 -INFO- null [null] boot_proc = [] proc_sys = [nablarch-example-web] req_id = [null] usr_id = [null] initialized.
+	WRITER NAME        = [writer.monitorFile]
+	WRITER CLASS       = [nablarch.core.log.basic.FileLogWriter]
+	FORMATTER CLASS    = [nablarch.core.log.basic.BasicLogFormatter]
+	LEVEL              = [null]
+	FILE PATH          = [./monitor.log]
+	ENCODING           = [UTF-8]
+	OUTPUT BUFFER SIZE = [8000]
+	FILE AUTO CHANGE   = [false]
+	MAX FILE SIZE      = [0]
+	CURRENT FILE SIZE  = [24599]
+2021-06-05 20:05:04.596 -INFO- null [null] boot_proc = [] proc_sys = [nablarch-example-web] req_id = [null] usr_id = [null] initialized.
+	LOGGER = [MON] NAME REGEX = [MONITOR] LEVEL = [ERROR]
+2021-06-05 20:39:46.881 -INFO- null [null] boot_proc = [] proc_sys = [nablarch-example-web] req_id = [null] usr_id = [null] initialized.
+	WRITER NAME        = [writer.monitorFile]
+	WRITER CLASS       = [nablarch.core.log.basic.FileLogWriter]
+	FORMATTER CLASS    = [nablarch.core.log.basic.BasicLogFormatter]
+	LEVEL              = [null]
+	FILE PATH          = [./monitor.log]
+	ENCODING           = [UTF-8]
+	OUTPUT BUFFER SIZE = [8000]
+	FILE AUTO CHANGE   = [false]
+	MAX FILE SIZE      = [0]
+	CURRENT FILE SIZE  = [25324]
+2021-06-05 20:39:46.890 -INFO- null [null] boot_proc = [] proc_sys = [nablarch-example-web] req_id = [null] usr_id = [null] initialized.
+	LOGGER = [MON] NAME REGEX = [MONITOR] LEVEL = [ERROR]

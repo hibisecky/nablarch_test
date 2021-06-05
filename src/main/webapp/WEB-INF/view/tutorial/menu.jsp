@@ -19,7 +19,8 @@
                 </tr>
             </tbody>
             <n:a href="/action/tutorial/detail">プロフィール</n:a><br>
-            <n:a href="/action/tutorial/searchUsers">ユーザ検索</n:a>
+            <n:a href="/action/tutorial/searchUsers">ユーザ検索</n:a><br>
+            <n:a href="/action/tutorial/registUser">ユーザ登録</n:a>
         </table>
     </body>
 </html>

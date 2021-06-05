@@ -65,4 +65,12 @@ public class TutorialAction {
         context.setRequestScopedVar("users", users);
         return new HttpResponse("/WEB-INF/view/tutorial/searchUsers.jsp");
     }
+
+    public HttpResponse registUser(HttpRequest request, ExecutionContext context){
+        return new HttpResponse("/WEB-INF/view/tutorial/registUser.jsp");
+    }
+
+    public HttpResponse registUserConfirm(HttpRequest request, ExecutionContext context){
+        return new HttpResponse("/WEB-INF/view/tutorial/registUserConfirm.jsp");
+    }
 }
