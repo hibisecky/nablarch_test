@@ -11,15 +11,18 @@
 
     <body>
         <h2>メニュー</h2>
-        <table class="table">
+        <%--<table class="table">
             <tbody>
                 <tr>
                     <th>ユーザID</th>
                     <td><n:write name="form.loginId"/></td>
                 </tr>
             </tbody>
-            <n:a href="/action/tutorial/detail">プロフィール</n:a><br>
-            <n:a href="/action/tutorial/searchUsers">ユーザ検索</n:a>
-        </table>
+        </table>--%>
+        <n:a href="/action/tutorial/detail">プロフィール</n:a><br>
+        <n:a href="/action/tutorial/searchUsers">ユーザ検索</n:a><br>
+        <n:a href="/action/tutorial/newEntity">ユーザ登録</n:a><br>
+        <n:a href="/action/tutorial/edit">ユーザ更新</n:a><br>
+        <n:a href="/action/tutorial/delete">ユーザ削除</n:a><br>
     </body>
 </html>
