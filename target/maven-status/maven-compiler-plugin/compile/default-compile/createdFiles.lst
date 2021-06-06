@@ -7,6 +7,7 @@ com\nablarch\example\app\entity\core\validation\validator\ExampleDomainType.clas
 com\nablarch\example\app\entity\Industry.class
 com\nablarch\example\app\web\handler\ExampleErrorForwardHandler.class
 com\nablarch\example\app\web\form\ProjectBulkForm.class
+com\nablarch\example\app\web\form\UserForm.class
 com\nablarch\example\app\web\form\InnerProjectForm.class
 com\nablarch\example\app\web\common\authentication\AuthenticationUtil.class
 com\nablarch\example\app\web\dto\ClientSearchDto.class

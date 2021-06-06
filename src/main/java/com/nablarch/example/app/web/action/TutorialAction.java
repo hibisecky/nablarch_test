@@ -5,6 +5,7 @@ import com.nablarch.example.app.entity.Users;
 import com.nablarch.example.app.web.common.authentication.context.LoginUserPrincipal;
 import com.nablarch.example.app.web.dto.UsersDto;
 import com.nablarch.example.app.web.form.LoginForm;
+import com.nablarch.example.app.web.form.UserForm;
 import nablarch.common.dao.UniversalDao;
 import nablarch.common.web.session.SessionUtil;
 import nablarch.core.beans.BeanUtil;
@@ -14,12 +15,31 @@ import nablarch.fw.web.HttpResponse;
 
 import java.util.List;
 
-
+/**
+ * チュートリアル。
+ *
+ * @author Sekine Hibiki
+ */
 public class TutorialAction {
+
+    /**
+     * チュートリアルログイン画面を表示。
+     *
+     * @param request HTTPリクエスト
+     * @param context 実行コンテキスト
+     * @return HTTPレスポンス
+     */
     public HttpResponse index(HttpRequest request, ExecutionContext context){
         return new HttpResponse("/WEB-INF/view/tutorial/index.jsp");
     }
 
+    /**
+     * ログインする。
+     *
+     * @param request HTTPリクエスト
+     * @param context 実行コンテキスト
+     * @return HTTPレスポンス
+     */
     public HttpResponse login(HttpRequest request, ExecutionContext context){
         LoginForm form = BeanUtil.createAndCopy(LoginForm.class, request.getParamMap());
         form.setLoginId("10000001");
@@ -66,11 +86,41 @@ public class TutorialAction {
         return new HttpResponse("/WEB-INF/view/tutorial/searchUsers.jsp");
     }
 
+    public HttpResponse newEntity(HttpRequest request, ExecutionContext context){
+        return new HttpResponse("/WEB-INF/view/tutorial/registUser.jsp");
+    }
+
     public HttpResponse registUser(HttpRequest request, ExecutionContext context){
         return new HttpResponse("/WEB-INF/view/tutorial/registUser.jsp");
     }
 
-    public HttpResponse registUserConfirm(HttpRequest request, ExecutionContext context){
-        return new HttpResponse("/WEB-INF/view/tutorial/registUserConfirm.jsp");
+    public HttpResponse confirmOfRegistUser(HttpRequest request, ExecutionContext context){
+        UserForm userForm = context.getRequestScopedVar("userForm");
+        UsersDto user = BeanUtil.createAndCopy(UsersDto.class, userForm);
+        SessionUtil.put(context, "user", user);
+        return new HttpResponse("/WEB-INF/view/tutorial/confirmOfRegistUser.jsp");
+    }
+
+    /**
+     * ユーザ登録完了画面を表示。
+     *
+     * @param request HTTPリクエスト
+     * @param context 実行コンテキスト
+     * @return HTTPレスポンス
+     */
+    public HttpResponse completeOfRegistUser(HttpRequest request, ExecutionContext context){
+        return new HttpResponse("/WEB-INF/view/tutorial/completeOfRegistUser.jsp");
+    }
+
+    public HttpResponse edit(HttpRequest request, ExecutionContext context){
+        return new HttpResponse("/WEB-INF/view/tutorial/update.jsp");
+    }
+
+    public HttpResponse update(HttpRequest request, ExecutionContext context){
+        return new HttpResponse("/WEB-INF/view/tutorial/confirmOfUpdate.jsp");
+    }
+
+    public HttpResponse delete(HttpRequest request, ExecutionContext context){
+        return new HttpResponse("/WEB-INF/view/tutorial/confirmOfDelete.jsp");
     }
 }

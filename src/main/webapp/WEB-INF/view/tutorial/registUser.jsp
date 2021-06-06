@@ -37,9 +37,23 @@
                             <n:text name="userForm.kanaName" cssClass="form-control width-300" />
                         </div>
                     </td>
-                    <n:button uri="/action/tutorial/registUserConfirm">登録</n:button>
                 </tbody>
             </table>
+            <n:forInputPage>
+                <n:button uri="/action/tutorial/confirmOfRegistUser">登録</n:button>
+            </n:forInputPage>
+            <n:forConfirmationPage>
+                <n:button uri="/action/tutorial/completeOfRegistUser">確定</n:button>
+            </n:forConfirmationPage>
+            <section>
+                <div class="page-footer">
+                    <div class="button-nav">
+                        <div class="button-block link-button-block">
+                            <n:a href="/action/tutorial/login" cssClass="btn btn-raised btn-default">戻る</n:a>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </n:form>
     </body>
 </html>
