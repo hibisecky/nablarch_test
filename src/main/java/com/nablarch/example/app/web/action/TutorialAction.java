@@ -123,10 +123,4 @@ public class TutorialAction {
     public HttpResponse delete(HttpRequest request, ExecutionContext context){
         return new HttpResponse("/WEB-INF/view/tutorial/confirmOfDelete.jsp");
     }
-
-    //test
-
-    //test2
-
-    //test3
 }
